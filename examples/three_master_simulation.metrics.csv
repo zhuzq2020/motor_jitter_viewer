@@ -1,0 +1,4 @@
+﻿backend,file,samples,duration_s,sample_interval_mean_ms,sample_interval_p99_ms,sample_interval_max_ms,sample_interval_std_ms,position_p2p_rad,dropped_total,cycle_gaps,hold_samples,hold_segments,hold_centered_rms_rad,hold_centered_p2p_rad,tracking_rms_rad,tracking_p2p_rad
+ecmaster_simulation,motor_jitter_viewer\examples\validation_final_whole_robot_ecmasterd.csv,1129,1.127991816,0.9999927446808512,1.011026100000008,1.0387319999999312,0.005574450664219686,0.00999982711011,0,0,553,1,0.0,0.0,0.0,0.0
+soem_simulation,motor_jitter_viewer\examples\validation_final_whole_robot_soemd.csv,1131,1.130060826,1.000053828318584,1.007471780000021,1.0695440000000005,0.003995530643005977,0.00999982711011,0,0,553,1,0.0,0.0,0.0,0.0
+igh_simulation,motor_jitter_viewer\examples\validation_final_whole_robot_ighd.csv,1130,1.128992076,0.9999929813994686,1.0318560000000043,1.1143829999999966,0.009789805151750573,0.00999982711011,0,0,553,1,0.0,0.0,0.0,0.0
