@@ -32,12 +32,12 @@ Cycle log to copy: /home/admin1/workspace/.../logs/runtime/cycle_<backend>_<时�
 
 本项目对应的三份实机对比日志发布在 Hugging Face Dataset：
 
-- [zhuzq2020/ethercat-master-jitter-logs](https://huggingface.co/datasets/zhuzq2020/ethercat-master-jitter-logs)
+- [zaki2022/ethercat-master-jitter-logs](https://huggingface.co/datasets/zaki2022/ethercat-master-jitter-logs)
 
 可用 Hugging Face CLI 下载（需要先安装 `huggingface_hub`，公开数据集无需登录）：
 
 ```powershell
-hf download zhuzq2020/ethercat-master-jitter-logs --repo-type dataset --local-dir hf_logs
+hf download zaki2022/ethercat-master-jitter-logs --repo-type dataset --local-dir hf_logs
 Copy-Item hf_logs/raw/ecmaster/*.csv imported_logs/ecmaster/
 Copy-Item hf_logs/raw/soem/*.csv imported_logs/soem/
 Copy-Item hf_logs/raw/igh/*.csv imported_logs/igh/
