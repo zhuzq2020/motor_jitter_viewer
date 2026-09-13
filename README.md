@@ -1,4 +1,20 @@
-# 三种 EtherCAT 主站：电机位置与抖动对比
+# 三种 EtherCAT 主站：电机位置与抖动对比 (Motor Jitter Viewer)
+
+<p align="left">
+  <img src="https://img.shields.io/badge/Language-Python%203-blue?style=flat-square&logo=python" alt="Python" />
+  <img src="https://img.shields.io/badge/Protocol-EtherCAT-008080?style=flat-square" alt="EtherCAT" />
+  <img src="https://img.shields.io/badge/License-MIT-green?style=flat-square" alt="License" />
+  <a href="https://zhuzq2020.github.io"><img src="https://img.shields.io/badge/Technical_Blog-zhuzq2020.github.io-orange?style=flat-square&logo=hexo" alt="Blog" /></a>
+  <a href="https://huggingface.co/datasets/zaki2022/ethercat-master-jitter-logs"><img src="https://img.shields.io/badge/Dataset-Hugging%20Face-yellow?style=flat-square&logo=huggingface" alt="Hugging Face" /></a>
+</p>
+
+> 跨主站（EC-Master / SOEM / IgH）电机位置跟踪曲线与 EtherCAT 通信周期抖动多维度对比分析与可视化工具。
+
+<p align="center">
+  <img src="examples/three_master_simulation.png" alt="三种 EtherCAT 主站位置与周期抖动对比" width="850" />
+</p>
+
+---
 
 Windows 启动：双击 `start_viewer.cmd`，或在项目目录运行：
 
@@ -81,6 +97,11 @@ python jitter_viewer.py commercial.csv soem.csv igh.csv --axis 20 --start 10 --e
 
 `examples/` 中的 CSV 和 `three_master_simulation.png` 是**三种主站程序使用同一个仿真运行时产生的验证示例**，用于测试记录/绘图链路，不代表三种实际 EtherCAT 主站的性能。
 
-## 实机对比报告
+## 实机对比报告与文档
 
-[D22 三种 EtherCAT 主站位置与周期抖动对比](three_master_jitter_comparison.md)包含完整轨迹、周期局部放大、指标图和分析建议。
+- 📊 [D22 三种 EtherCAT 主站位置与周期抖动对比完整分析报告](three_master_jitter_comparison.md)：包含完整轨迹、周期局部放大、指标图和分析建议。
+- 📖 [EtherCAT 与 CANopen/CiA 402 伺服控制入门：从 CoE、SDO/PDO 到状态机](https://zhuzq2020.github.io/2026/07/22/EtherCAT-CANopen-CiA402-Servo-Control/)：作者技术博客专栏文章，深度解析总线原理。
+
+## 📄 开源许可证
+
+本项目基于 [MIT License](LICENSE) 协议开源。
